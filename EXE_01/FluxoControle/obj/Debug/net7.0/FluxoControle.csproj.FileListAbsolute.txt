@@ -1,0 +1,15 @@
+C:\PROGRAMACAO_I\UNOESC\EXE_01\FluxoControle\bin\Debug\net7.0\FluxoControle.exe
+C:\PROGRAMACAO_I\UNOESC\EXE_01\FluxoControle\bin\Debug\net7.0\FluxoControle.deps.json
+C:\PROGRAMACAO_I\UNOESC\EXE_01\FluxoControle\bin\Debug\net7.0\FluxoControle.runtimeconfig.json
+C:\PROGRAMACAO_I\UNOESC\EXE_01\FluxoControle\bin\Debug\net7.0\FluxoControle.dll
+C:\PROGRAMACAO_I\UNOESC\EXE_01\FluxoControle\bin\Debug\net7.0\FluxoControle.pdb
+C:\PROGRAMACAO_I\UNOESC\EXE_01\FluxoControle\obj\Debug\net7.0\FluxoControle.csproj.AssemblyReference.cache
+C:\PROGRAMACAO_I\UNOESC\EXE_01\FluxoControle\obj\Debug\net7.0\FluxoControle.GeneratedMSBuildEditorConfig.editorconfig
+C:\PROGRAMACAO_I\UNOESC\EXE_01\FluxoControle\obj\Debug\net7.0\FluxoControle.AssemblyInfoInputs.cache
+C:\PROGRAMACAO_I\UNOESC\EXE_01\FluxoControle\obj\Debug\net7.0\FluxoControle.AssemblyInfo.cs
+C:\PROGRAMACAO_I\UNOESC\EXE_01\FluxoControle\obj\Debug\net7.0\FluxoControle.csproj.CoreCompileInputs.cache
+C:\PROGRAMACAO_I\UNOESC\EXE_01\FluxoControle\obj\Debug\net7.0\FluxoControle.dll
+C:\PROGRAMACAO_I\UNOESC\EXE_01\FluxoControle\obj\Debug\net7.0\refint\FluxoControle.dll
+C:\PROGRAMACAO_I\UNOESC\EXE_01\FluxoControle\obj\Debug\net7.0\FluxoControle.pdb
+C:\PROGRAMACAO_I\UNOESC\EXE_01\FluxoControle\obj\Debug\net7.0\FluxoControle.genruntimeconfig.cache
+C:\PROGRAMACAO_I\UNOESC\EXE_01\FluxoControle\obj\Debug\net7.0\ref\FluxoControle.dll
