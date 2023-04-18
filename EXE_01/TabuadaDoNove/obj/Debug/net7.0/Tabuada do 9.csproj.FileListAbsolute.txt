@@ -1,0 +1,15 @@
+C:\PROGRAMACAO_I\UNOESC\EXE_01\TabuadaDoNove\obj\Debug\net7.0\Tabuada do 9.csproj.AssemblyReference.cache
+C:\PROGRAMACAO_I\UNOESC\EXE_01\TabuadaDoNove\obj\Debug\net7.0\Tabuada do 9.GeneratedMSBuildEditorConfig.editorconfig
+C:\PROGRAMACAO_I\UNOESC\EXE_01\TabuadaDoNove\obj\Debug\net7.0\Tabuada do 9.AssemblyInfoInputs.cache
+C:\PROGRAMACAO_I\UNOESC\EXE_01\TabuadaDoNove\obj\Debug\net7.0\Tabuada do 9.AssemblyInfo.cs
+C:\PROGRAMACAO_I\UNOESC\EXE_01\TabuadaDoNove\obj\Debug\net7.0\Tabuada do 9.csproj.CoreCompileInputs.cache
+C:\PROGRAMACAO_I\UNOESC\EXE_01\TabuadaDoNove\bin\Debug\net7.0\Tabuada do 9.exe
+C:\PROGRAMACAO_I\UNOESC\EXE_01\TabuadaDoNove\bin\Debug\net7.0\Tabuada do 9.deps.json
+C:\PROGRAMACAO_I\UNOESC\EXE_01\TabuadaDoNove\bin\Debug\net7.0\Tabuada do 9.runtimeconfig.json
+C:\PROGRAMACAO_I\UNOESC\EXE_01\TabuadaDoNove\bin\Debug\net7.0\Tabuada do 9.dll
+C:\PROGRAMACAO_I\UNOESC\EXE_01\TabuadaDoNove\bin\Debug\net7.0\Tabuada do 9.pdb
+C:\PROGRAMACAO_I\UNOESC\EXE_01\TabuadaDoNove\obj\Debug\net7.0\Tabuada do 9.dll
+C:\PROGRAMACAO_I\UNOESC\EXE_01\TabuadaDoNove\obj\Debug\net7.0\refint\Tabuada do 9.dll
+C:\PROGRAMACAO_I\UNOESC\EXE_01\TabuadaDoNove\obj\Debug\net7.0\Tabuada do 9.pdb
+C:\PROGRAMACAO_I\UNOESC\EXE_01\TabuadaDoNove\obj\Debug\net7.0\Tabuada do 9.genruntimeconfig.cache
+C:\PROGRAMACAO_I\UNOESC\EXE_01\TabuadaDoNove\obj\Debug\net7.0\ref\Tabuada do 9.dll
