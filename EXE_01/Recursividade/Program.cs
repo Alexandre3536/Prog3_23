@@ -1,5 +1,5 @@
 ﻿Console.WriteLine("Cálculo Fatorial Recursivo");
-Console.WriteLine("*********************************************");
+Console.WriteLine("**************************");
 Console.WriteLine();
 
 Console.WriteLine("Digite um número:");
@@ -10,7 +10,7 @@ Console.WriteLine($"Fibonacci de {numero} é {Fibonacci(numero)}");
 
 static int Factorial(int number)
 {
-    //caso base 1
+    //Caso base 1
     if(number < 0)
     {
         throw new ArgumentException(
@@ -18,30 +18,39 @@ static int Factorial(int number)
             paramName: nameof(number)
         );
     }
-    else if(number == 0) //caso base 2
+    else if(number == 0) //Caso base 2
     {
         return 1;
     }
-    else // Caso Recursivo
+    else // Caso recursivo
     {
-        return number * Factorial(number -1);
+        return number * Factorial(number - 1);
     }
 }
 
 static long Fibonacci(int n)
 {
-    if( n <= 2L) // Caso base
+    if( n <= 2L ) // Caso base
         return 1L;
 
-    return Fibonacci(n - 1) + Fibonacci(n - 2);
+    return Fibonacci(n - 1) + Fibonacci(n -2);
 }
 
 static void MultiplicarWhile(int n)
 {
-    int fator = 10;
-    while(fator <=10)
+    int fator = 1;
+    while(fator <= 10)
     {
         Console.WriteLine($"{n} x {fator} = {n * fator}");
         fator++;
     }
 }
+
+static void MultiplicarFor(int n)
+{    
+    for(int i = 1; i <= 10; i++)
+    {
+        Console.WriteLine($"{n} * {i} = {n * i}");
+    }
+}
+

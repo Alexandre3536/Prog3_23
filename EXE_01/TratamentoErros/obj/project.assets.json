@@ -16,11 +16,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Unoesc\\Programacao I\\2023\\Exe\\Recursividade\\Recursividade.csproj",
-      "projectName": "Recursividade",
-      "projectPath": "D:\\Unoesc\\Programacao I\\2023\\Exe\\Recursividade\\Recursividade.csproj",
+      "projectUniqueName": "D:\\Unoesc\\Programacao I\\2023\\Exe\\TratamentoErros\\TratamentoErros.csproj",
+      "projectName": "TratamentoErros",
+      "projectPath": "D:\\Unoesc\\Programacao I\\2023\\Exe\\TratamentoErros\\TratamentoErros.csproj",
       "packagesPath": "C:\\Users\\WIN.000\\.nuget\\packages\\",
-      "outputPath": "D:\\Unoesc\\Programacao I\\2023\\Exe\\Recursividade\\obj\\",
+      "outputPath": "D:\\Unoesc\\Programacao I\\2023\\Exe\\TratamentoErros\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
