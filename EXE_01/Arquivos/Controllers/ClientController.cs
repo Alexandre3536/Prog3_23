@@ -1,3 +1,4 @@
+using System.IO;
 using Arquivos.Data;
 using Arquivos.Models;
 
@@ -7,7 +8,8 @@ namespace Arquivos.Controllers
    
     public class ClientController
     {
-
+        private string directoryName = "ReportFiles";
+        private string fileName  = "Clients.txt";
         public List<Client> List()
         {
             return DataSet.Clients;
@@ -26,6 +28,35 @@ namespace Arquivos.Controllers
             DataSet.Clients.Add(client);
 
             return true;
+         }
+
+         public bool ExportToTextFile()
+         {
+            
+            if(!Directory.Exists(directoryName))
+             Directory.CreateDirectory(directoryName);
+            
+            string fileContent = string.Empty;
+            foreach(Client c in DataSet.Clients)
+            {
+                fileContent += $"{c.Id};{c.CPF};{c.FirstName};{c.LastName}; {c.Email}";
+                fileContent += "\n";
+            }
+            try
+            {
+                StreamWriter sw = File.CreateText($"{directoryName}\\{fileName}");
+                sw.Write(fileContent);
+                sw.Close();
+            }
+            catch(IOException ioEx)
+            {
+                Console.WriteLine("Erro ao manipular o arquivo.");
+                Console.WriteLine(ioEx.Message);
+                return false;
+            }
+
+            return true;
+               
          }
         public int GetNextId()
         {
