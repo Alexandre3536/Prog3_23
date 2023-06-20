@@ -40,6 +40,10 @@ namespace Arquivos.Views
                 case 3 :
                     Export();
                 break;
+                case 4 :
+                    Import();
+                break;
+                
                 default:        
                 break;
             }
@@ -102,6 +106,14 @@ namespace Arquivos.Views
             else
                 Console.Write("Oooooops.");
             
+        }
+
+        private void Import()
+        {
+           if(clientController.ImportFromTxtFile() )
+                Console.WriteLine("Arquivo importado com sucesso!");
+            else
+                Console.WriteLine("Oooooops."); 
         }
     }
 }
