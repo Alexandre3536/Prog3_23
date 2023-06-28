@@ -1,4 +1,5 @@
-1;07838089;Alexandre;De Bortoli; alexandre@gmail.com
-2;0525152200;Maria;Silva; mariasilva@gmail.com
-3;05289552;Joana;Silva; joanasilva@gmail.com
-3;05289854552;Cecilia;Silva; ceciliasilva@gmail.com
+1;000.000.000-00;Alexandre;De Bortoli; alexandre.debortoli26@gmail.com
+2;000.000.000-01;Maria;Silva; maria@silva.com
+3;000.000.000-02;Agnaldo;Timóteo; agnaldo@timoteo.com
+4;078252258-78;Joana;Silva; joana@silva@gmail.com
+5;07825;Marta;Silva;marta@gmail.com

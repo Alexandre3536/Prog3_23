@@ -1,0 +1,15 @@
+C:\PROGRAMACAO_I\UNOESC\EXE_01\ClinicaVeterinaria\obj\Debug\net7.0\ClinicaVeterinaria.csproj.AssemblyReference.cache
+C:\PROGRAMACAO_I\UNOESC\EXE_01\ClinicaVeterinaria\obj\Debug\net7.0\ClinicaVeterinaria.GeneratedMSBuildEditorConfig.editorconfig
+C:\PROGRAMACAO_I\UNOESC\EXE_01\ClinicaVeterinaria\obj\Debug\net7.0\ClinicaVeterinaria.AssemblyInfoInputs.cache
+C:\PROGRAMACAO_I\UNOESC\EXE_01\ClinicaVeterinaria\obj\Debug\net7.0\ClinicaVeterinaria.AssemblyInfo.cs
+C:\PROGRAMACAO_I\UNOESC\EXE_01\ClinicaVeterinaria\obj\Debug\net7.0\ClinicaVeterinaria.csproj.CoreCompileInputs.cache
+C:\PROGRAMACAO_I\UNOESC\EXE_01\ClinicaVeterinaria\bin\Debug\net7.0\ClinicaVeterinaria.exe
+C:\PROGRAMACAO_I\UNOESC\EXE_01\ClinicaVeterinaria\bin\Debug\net7.0\ClinicaVeterinaria.deps.json
+C:\PROGRAMACAO_I\UNOESC\EXE_01\ClinicaVeterinaria\bin\Debug\net7.0\ClinicaVeterinaria.runtimeconfig.json
+C:\PROGRAMACAO_I\UNOESC\EXE_01\ClinicaVeterinaria\bin\Debug\net7.0\ClinicaVeterinaria.dll
+C:\PROGRAMACAO_I\UNOESC\EXE_01\ClinicaVeterinaria\bin\Debug\net7.0\ClinicaVeterinaria.pdb
+C:\PROGRAMACAO_I\UNOESC\EXE_01\ClinicaVeterinaria\obj\Debug\net7.0\ClinicaVeterinaria.dll
+C:\PROGRAMACAO_I\UNOESC\EXE_01\ClinicaVeterinaria\obj\Debug\net7.0\refint\ClinicaVeterinaria.dll
+C:\PROGRAMACAO_I\UNOESC\EXE_01\ClinicaVeterinaria\obj\Debug\net7.0\ClinicaVeterinaria.pdb
+C:\PROGRAMACAO_I\UNOESC\EXE_01\ClinicaVeterinaria\obj\Debug\net7.0\ClinicaVeterinaria.genruntimeconfig.cache
+C:\PROGRAMACAO_I\UNOESC\EXE_01\ClinicaVeterinaria\obj\Debug\net7.0\ref\ClinicaVeterinaria.dll

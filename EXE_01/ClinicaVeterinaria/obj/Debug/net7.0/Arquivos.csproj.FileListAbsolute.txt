@@ -1,0 +1,15 @@
+C:\PROGRAMACAO_I\UNOESC\EXE_01\arquivos\bin\Debug\net7.0\Arquivos.exe
+C:\PROGRAMACAO_I\UNOESC\EXE_01\arquivos\bin\Debug\net7.0\Arquivos.deps.json
+C:\PROGRAMACAO_I\UNOESC\EXE_01\arquivos\bin\Debug\net7.0\Arquivos.runtimeconfig.json
+C:\PROGRAMACAO_I\UNOESC\EXE_01\arquivos\bin\Debug\net7.0\Arquivos.dll
+C:\PROGRAMACAO_I\UNOESC\EXE_01\arquivos\bin\Debug\net7.0\Arquivos.pdb
+C:\PROGRAMACAO_I\UNOESC\EXE_01\arquivos\obj\Debug\net7.0\Arquivos.csproj.AssemblyReference.cache
+C:\PROGRAMACAO_I\UNOESC\EXE_01\arquivos\obj\Debug\net7.0\Arquivos.GeneratedMSBuildEditorConfig.editorconfig
+C:\PROGRAMACAO_I\UNOESC\EXE_01\arquivos\obj\Debug\net7.0\Arquivos.AssemblyInfoInputs.cache
+C:\PROGRAMACAO_I\UNOESC\EXE_01\arquivos\obj\Debug\net7.0\Arquivos.AssemblyInfo.cs
+C:\PROGRAMACAO_I\UNOESC\EXE_01\arquivos\obj\Debug\net7.0\Arquivos.csproj.CoreCompileInputs.cache
+C:\PROGRAMACAO_I\UNOESC\EXE_01\arquivos\obj\Debug\net7.0\Arquivos.dll
+C:\PROGRAMACAO_I\UNOESC\EXE_01\arquivos\obj\Debug\net7.0\refint\Arquivos.dll
+C:\PROGRAMACAO_I\UNOESC\EXE_01\arquivos\obj\Debug\net7.0\Arquivos.pdb
+C:\PROGRAMACAO_I\UNOESC\EXE_01\arquivos\obj\Debug\net7.0\Arquivos.genruntimeconfig.cache
+C:\PROGRAMACAO_I\UNOESC\EXE_01\arquivos\obj\Debug\net7.0\ref\Arquivos.dll
