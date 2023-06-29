@@ -1,0 +1,3 @@
+1;000.000.000-00;Alexandre;De Bortoli; alexandre.debortoli26@gmail.com
+2;000.000.000-01;Maria;Silva; maria@silva.com
+3;000.000.000-02;Agnaldo;Timóteo; agnaldo@timoteo.com

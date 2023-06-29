@@ -91,6 +91,29 @@ namespace ClinicaVeterinaria.Controllers
           
 
         }
+
+        public List<Animall> SearchByName(string pet)
+        {
+            if( string.IsNullOrEmpty(pet) ||
+                string.IsNullOrWhiteSpace(pet) 
+              )
+              return null;
+
+            List<Animall> animalls = new List<Animall>();
+            for(int i = 0; i < DataSet.Animalls.Count; i++)
+            {
+                var c = DataSet.Animalls[i];
+                if(c.SpeciesName.ToLower().Contains(pet.ToLower()) )
+                {
+                    animalls.Add(c);
+                }
+                
+            }
+            return animalls;
+
+
+
+        }
         public int GetNextId()
         {
             int tam = DataSet.Animalls.Count;

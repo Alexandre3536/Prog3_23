@@ -1,31 +1,28 @@
-
-
-
 using ClinicaVeterinaria.Controllers;
 using ClinicaVeterinaria.Data;
 using ClinicaVeterinaria.Models;
 
 namespace ClinicaVeterinaria.Views
 {
-    public class MedicoView
+    public class ClinicaView
     {
-        private MedicoController medicoController;
-        public MedicoView()
+        private ClinicaController clinicaController;
+        public ClinicaView()
         {
-            medicoController = new MedicoController();
+            clinicaController = new ClinicaController();
             this.Init();
         }
         public void Init()
         {
             Console.WriteLine("*********************");
-            Console.WriteLine("VOCÊ ESTÁ EM MÉDICOS");
+            Console.WriteLine("VOCÊ ESTÁ EM CLÍNICAS");
             Console.WriteLine("*********************");
             Console.WriteLine("");
-            Console.WriteLine("1 - Inserir Médico");
-            Console.WriteLine("2 - Listar Médicos");
-            Console.WriteLine("3 - Exportar Médicos");
-            Console.WriteLine("4 - Importar Médicos");
-            Console.WriteLine("5 - Pesquisar Médicos");
+            Console.WriteLine("1 - Inserir Clinica");
+            Console.WriteLine("2 - Listar Clinicas");
+            Console.WriteLine("3 - Exportar Clinicas");
+            Console.WriteLine("4 - Importar Clinicas");
+            Console.WriteLine("5 - Pesquisar Clinicas");
             Console.WriteLine("");
             int option = 0;
             option = Convert.ToInt32(Console.ReadLine());
@@ -44,7 +41,6 @@ namespace ClinicaVeterinaria.Views
                 case 4 :
                     Import();
                 break;
-
                 case 5:
                     SearchByName();
                 break;
@@ -56,7 +52,7 @@ namespace ClinicaVeterinaria.Views
 
         private void List()
         {
-            List<Medico> listagem = medicoController.List();
+            List<Clinica> listagem = clinicaController.List();
 
             for(int i = 0; i< listagem.Count;i++)
             {
@@ -65,14 +61,16 @@ namespace ClinicaVeterinaria.Views
 
         }
 
-        private string Print(Medico medico)
+        private string Print(Clinica clinica)
         {
             string retorno = "";
             retorno +="---------------------------------------\n";
-            retorno += $"Id: {medico.Id} \n";
-            retorno += $"Nome:{medico.FirstName} {medico.LastName} \n";
-            retorno += $"E-mail:{medico.Email} \n";
-            retorno += $"CPF: {medico.CPF} \n";
+            retorno += $"Id: {clinica.Id} \n";
+            retorno += $"Nome:{clinica.Name}  \n";
+            retorno += $"Telefone:{clinica.Telefone}  \n";
+            retorno += $"Endereço:{clinica.Endereco} \n";
+            retorno += $"Bairro: {clinica.Bairro} \n";
+            retorno += $"Número: {clinica.Numero} \n";
             retorno +="---------------------------------------\n";
 
             return retorno;
@@ -81,22 +79,22 @@ namespace ClinicaVeterinaria.Views
         }
         private void Insert()
         {
-            Medico medico = new Medico();
-            medico.Id = medicoController.GetNextId();
+            Clinica clinica = new Clinica();
+            clinica.Id = clinicaController.GetNextId();
 
-            Console.WriteLine("Informe o primeiro nome:");
-            medico.FirstName = Console.ReadLine();
+            Console.WriteLine("Informe o nome:");
+            clinica.Name = Console.ReadLine();
 
-            Console.WriteLine("Informe o sobrenome:");
-            medico.LastName = Console.ReadLine();
+            Console.WriteLine("Informe o telefone:");
+            clinica.Telefone = Console.ReadLine();
 
-            Console.WriteLine("Informe o CPF:");
-            medico.CPF = Console.ReadLine();
+            Console.WriteLine("Informe o Endereço:");
+            clinica.Endereco = Console.ReadLine();
 
-            Console.WriteLine("Informe o email:");
-            medico.Email = Console.ReadLine();
+            Console.WriteLine("Infome o Bairro");
+            clinica.Bairro = Console.ReadLine();
 
-            bool retorno = medicoController.Insert(medico);
+            bool retorno = clinicaController.Insert(clinica);
 
             if(retorno)
                 Console.WriteLine("Cliente inserido com sucesso!");
@@ -106,7 +104,7 @@ namespace ClinicaVeterinaria.Views
 
         private void Export()
         {
-            if(medicoController.ExportToTextFile() )
+            if(clinicaController.ExportToTextFile() )
                 Console.WriteLine("Arquivo gerado com sucesso!");         
             else
                 Console.Write("Oooooops.");
@@ -115,24 +113,25 @@ namespace ClinicaVeterinaria.Views
 
         private void Import()
         {
-           if(medicoController.ImportFromTxtFile() )
+           if(clinicaController.ImportFromTxtFile() )
                 Console.WriteLine("Arquivo importado com sucesso!");
             else
                 Console.WriteLine("Oooooops."); 
-
         }
 
         private void SearchByName()
         {
-            Console.WriteLine("Pesquisar Médico pelo nome.");
-            Console.WriteLine("Digite o nome:");
+            Console.WriteLine("Pesquisar Clinica pelo Nome.");
+            Console.WriteLine("Digite o nome da Clinica:");
             string name = Console.ReadLine();
 
-            foreach(Medico c in 
-                medicoController.SearchByName(name))
+            foreach(Clinica c in 
+                clinicaController.SearchByName(name))
             {
                 Console.WriteLine(c.ToString() );
             }
         }
+
+        
     }
 }

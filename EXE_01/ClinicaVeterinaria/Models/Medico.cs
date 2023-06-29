@@ -25,5 +25,16 @@ namespace ClinicaVeterinaria.Models
             CPF = cPF;
             Email = email;
         } //Fim do escopo deste método
+        public string FullName => $"{this.FirstName} {this.LastName}";
+
+
+        public override string ToString()
+        {
+            return $"Id:{this.Id}; Name: {this.FullName} ";
+        }
+
+
+
+
     }// Fim do escopo da classe
 }// Fim do escopo do Namespace

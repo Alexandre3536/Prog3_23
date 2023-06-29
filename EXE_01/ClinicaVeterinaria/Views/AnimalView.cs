@@ -25,6 +25,7 @@ namespace ClinicaVeterinaria.Views
             Console.WriteLine("2 - Listar Animais");
             Console.WriteLine("3 - Exportar Animais");
             Console.WriteLine("4 - Importar Animais");
+            Console.WriteLine("5 - Pesquisar Animais");
             Console.WriteLine("");
             int option = 0;
             option = Convert.ToInt32(Console.ReadLine());
@@ -42,6 +43,9 @@ namespace ClinicaVeterinaria.Views
                 break;
                 case 4 :
                     Import();
+                break;
+                case 5:
+                    SearchByName();
                 break;
                 
                 default:        
@@ -116,5 +120,20 @@ namespace ClinicaVeterinaria.Views
             else
                 Console.WriteLine("Oooooops."); 
         }
+
+        private void SearchByName()
+        {
+            Console.WriteLine("Pesquisar Animal pela espécie ou nome.");
+            Console.WriteLine("Digite a espécie ou o nome do animal:");
+            string pet = Console.ReadLine();
+
+            foreach(Animall c in 
+                animalController.SearchByName(pet))
+            {
+                Console.WriteLine(c.ToString() );
+            }
+        }
+
+        
     }
 }

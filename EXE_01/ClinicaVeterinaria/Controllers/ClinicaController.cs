@@ -6,26 +6,26 @@ namespace ClinicaVeterinaria.Controllers
 {
 
    
-    public class MedicoController
+    public class ClinicaController
     {
         private string directoryName = "ReportFiles";
-        private string fileName  = "Medico.txt";
-        public List<Medico> List()
+        private string fileName  = "Clinica.txt";
+        public List<Clinica> List()
         {
-            return DataSet.Medicos;
+            return DataSet.Clinicas;
         }
-         public bool Insert(Medico medico)
+         public bool Insert(Clinica clinica)
          {
-            if( medico == null)
+            if( clinica == null)
                 return false;
 
-            if(medico.Id<=0)
+            if(clinica.Id<=0)
                 return false;
 
-            if( string.IsNullOrWhiteSpace(medico.FirstName))
+            if( string.IsNullOrWhiteSpace(clinica.Name))
                 return false;
 
-            DataSet.Medicos.Add(medico);
+            DataSet.Clinicas.Add(clinica);
 
             return true;
          }
@@ -37,9 +37,9 @@ namespace ClinicaVeterinaria.Controllers
              Directory.CreateDirectory(directoryName);
             
             string fileContent = string.Empty;
-            foreach(Medico c in DataSet.Medicos)
+            foreach(Clinica c in DataSet.Clinicas)
             {
-                fileContent += $"{c.Id};{c.CPF};{c.FirstName};{c.LastName}; {c.Email}";
+                fileContent += $"{c.Id};{c.Name};{c.Telefone};{c.Endereco}; {c.Bairro};{c.Numero} ";
                 fileContent += "\n";
             }
             try
@@ -68,15 +68,16 @@ namespace ClinicaVeterinaria.Controllers
             line = sr.ReadLine();
             while(line != null)
             {
-                Medico medico = new Medico();
-                string[] medicoData = line.Split(';');
-                medico.Id = Convert.ToInt32(medicoData[0] ) ;
-                medico.CPF = medicoData[1];
-                medico.FirstName = medicoData[2];
-                medico.LastName = medicoData[3];
-                medico.Email = medicoData[4];
+                Clinica clinica = new Clinica();
+                string[] clinicaData = line.Split(';');
+                clinica.Id = Convert.ToInt32(clinicaData[0] ) ;
+                clinica.Name = clinicaData[1];
+                clinica.Telefone = clinicaData[2];
+                clinica.Endereco = clinicaData[3];
+                clinica.Bairro = clinicaData[4];
+                clinica.Numero = Convert.ToInt32(clinicaData[5]);
 
-                DataSet.Medicos.Add(medico);
+                DataSet.Clinicas.Add(clinica);
 
                 line = sr.ReadLine();
             }
@@ -93,33 +94,33 @@ namespace ClinicaVeterinaria.Controllers
         }
 
 
-        public List<Medico> SearchByName(string name)
+        public List<Clinica> SearchByName(string name)
         {
             if( string.IsNullOrEmpty(name) ||
                 string.IsNullOrWhiteSpace(name) 
               )
               return null;
 
-            List<Medico> medicos = new List<Medico>();
+            List<Clinica> clinicas = new List<Clinica>();
             for(int i = 0; i < DataSet.Medicos.Count; i++)
             {
-                var c = DataSet.Medicos[i];
-                if(c.FullName.ToLower().Contains(name.ToLower()) )
+                var c = DataSet.Clinicas[i];
+                if(c.IdName.ToLower().Contains(name.ToLower()) )
                 {
-                    medicos.Add(c);
+                    clinicas.Add(c);
                 }
                 
             }
-            return medicos;
+            return clinicas;
 
         }
 
 
         public int GetNextId()
         {
-            int tam = DataSet.Medicos.Count;
+            int tam = DataSet.Clinicas.Count;
             if( tam > 0)
-                return DataSet.Medicos[tam - 1].Id +1;
+                return DataSet.Clinicas[tam - 1].Id +1;
             else
                 return 1;
     
