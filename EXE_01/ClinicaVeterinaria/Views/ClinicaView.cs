@@ -94,6 +94,11 @@ namespace ClinicaVeterinaria.Views
             Console.WriteLine("Infome o Bairro");
             clinica.Bairro = Console.ReadLine();
 
+            
+            Console.WriteLine("Digite um número:");
+            clinica.Numero= Convert.ToInt32 (Console.ReadLine());
+            
+
             bool retorno = clinicaController.Insert(clinica);
 
             if(retorno)
